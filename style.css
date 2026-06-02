@@ -1,7 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tela{
+    display: none;
+}
+.ativa{
+    display: block;
+}
+header{
+    position: sticky;
+    background-color: #810B38;
+    padding: 10px;
+}
+#parte-cima{
+    display: flex;
+    justify-content: space-between;
+}
+#btns-head{
+    display: flex;
+    gap: 15px;
+}
+button{
+    color: #F1E2D1;
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+button:hover{
+    color: #DCC3AA;
+}
 body{
     background-color: #F1E2D1;
 }
-h1{
+#paragrafo{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+h3{
     color: #541A1A;
-    text-align: center;
+}
+h2{
+    color: #F1E2D1;
+}
+p{
+    color: #541A1A;
 }
