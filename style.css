@@ -41,7 +41,12 @@ body{
     gap: 4px;
     padding: 10px;
     flex-wrap: wrap;
+    direction: ltr;
+    width: 650px;
+    justify-content: flex-start;
 }
+
+    
 h3{
     color: #541A1A;
 }
