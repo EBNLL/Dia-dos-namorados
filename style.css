@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .tela{
     display: none;
@@ -10,58 +9,127 @@
 .ativa{
     display: block;
 }
-header{
-    position: sticky;
-    background-color: #810B38;
-    padding: 10px;
+.teste{
+    display: none;
 }
-#parte-cima{
+.onfire{
+    display: block;
+}
+.screen{
+    display: none;
+}
+.on{
+    display: block;
+}
+body {
+    background-color: #F1E2D1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #810B38;
+    padding: 15px 40px;
+}
+
+#parte-cima {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-#btns-head{
+
+h2 {
+    color: #F1E2D1;
+}
+
+#btns-head {
     display: flex;
     gap: 15px;
 }
-button{
+
+.btn-cima {
     color: #F1E2D1;
     background-color: transparent;
-    border-color: transparent;
-    font-size: 15px;
-    
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
-button:hover{
+
+.btn-cima:hover {
     color: #DCC3AA;
+    transform: scale(1.05);
 }
-body{
-    background-color: #F1E2D1;
-}
-#todos-textos{
+#todos-textos {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
     padding: 50px;
 }
-#coracao{
-    width: 483px;
-    height: auto;
-}
 #paragrafo{
-    display: flex;
-    gap: 5px;
-    padding: 10px;
-    flex-wrap: wrap;
-    width: 715px;       
     background-color: #DCC3AA;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.texto-dicas {
+    background-color: #DCC3AA;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#paragrafo {
+    max-width: 750px;
     font-size: 20px;
-}   
-h3{
+}
+
+.texto-dicas {
+    max-width: 900px;
+    min-height: 500px;
+    font-size: 22px;
+}
+
+h3 {
     color: #541A1A;
+    margin-bottom: 20px;
+    font-size: 32px;
 }
-h2{
-    color: #F1E2D1;
-}
-p{
+
+p {
     color: #541A1A;
     text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#coracao {
+    width: 420px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.pag-dicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 50px;
+}
+
+.btn-pass {
+    background-color: #810B38;
+    color: #F1E2D1;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn-pass:hover {
+    background-color: #541A1A;
+    transform: scale(1.1);
 }
